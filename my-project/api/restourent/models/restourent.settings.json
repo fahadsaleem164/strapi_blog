@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restourents",
+  "info": {
+    "name": "Restourent",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "category": {
+      "via": "restourents",
+      "model": "category"
+    }
+  }
+}
